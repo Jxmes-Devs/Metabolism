@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="ui.css">
+    <script src="ui.js"></script>
+    <script src="vendor/jquery-3.3.1.min.js"></script>
+    <script src="vendor/jquery-ui.js"></script>
+</head>
+
+<title>metabolism</title>
+</head>
+
+<body>
+    <div class="container" id="hide">
+        <div class="health_container">
+            <div>
+                <svg class="innerHealth" id="innerHealth" viewBox="8.435 8.451 3.054 3.216" width="6.108px" height="6.432px">
+                    <defs>
+                        <linearGradient id="innerHealthGradient" x1="0" x2="0" y1="0" y2="1">
+                          <stop offset="0%"/>
+                          <stop offset="0%"/>
+                        </linearGradient>
+                      </defs>
+                    <path fill="url(#innerHealthGradient)" d="M 8.974 10.144 L 8.974 10.741 L 8.435 10.741 L 8.435 11.065 L 8.974 11.065 L 8.974 11.667 L 9.34 11.667 L 9.34 11.065 L 9.888 11.065 L 9.888 10.741 L 9.34 10.741 L 9.34 10.144 L 8.974 10.144 Z"></path>
+                </svg>
+            </div>
+            <div>
+                <div class="notify-bar health-bar" id="health-bar">
+                    <svg width="120%" height="120%" viewBox="-10 -10 120 120" xmlns="http://www.w3.org/2000/svg" transform="rotate(-90 50 50)">
+                        
+                        <circle class="progressCircle" cx="48" cy="53" r="48" fill="none" stroke-width="10"
+                        stroke-dasharray="301.59289474462014" stroke-dashoffset="301.59289474462014" shape-rendering="geometricPrecision"/>
+                      </svg>
+                </div>
+            </div>
+        </div>
+        <div class="stamina_container">
+            <div>
+                <svg class="innerStamina" id="innerStamina" fill="#ffffff" mlns="http://www.w3.org/2000/svg" viewBox="4.327 1.012 10.023 17.719" width="2.1551724137931036vh" height="35px">
+                    <defs>
+                        <linearGradient id="innerStaminaGradient" x1="0" x2="0" y1="0" y2="1">
+                            <stop offset="0%"/>
+                            <stop offset="0%"/>
+                          </linearGradient>
+                      </defs>
+                    <path fill="url(#innerStaminaGradient)" d="M 11.374 1.012 L 4.327 10.93 L 9.327 10.93 L 6.625 18.731 L 14.35 8.064 L 9.35 8.064 L 11.374 1.012 Z" id="object-0"/>
+                </svg>
+            </div>
+            <div>
+                <div class="notify-bar stamina-bar" id="stamina-bar">
+                    <svg width="120%" height="120%" viewBox="-10 -10 120 120" xmlns="http://www.w3.org/2000/svg" transform="rotate(-90 50 50)">
+                        <circle class="progressCircle" cx="48" cy="53" r="48" fill="none" stroke-width="10"
+                        stroke-dasharray="301.59289474462014" stroke-dashoffset="301.59289474462014" shape-rendering="geometricPrecision"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="horseHealth_container">
+            <div>
+                <svg class="horseHealthIcon" id="horseHealthIcon" fill="#ffffff" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="horseHealthIconGradient" x1="0" x2="0" y1="0" y2="1">
+                            <stop offset="0%" stop-color="#ffffff"/>
+                            <stop offset="0%" stop-color="#ffffff"/>
+                        </linearGradient>
+                      </defs>
+                    <path fill="url(#horseHealthIconGradient)" d="M 23 4 C 20.957031 4 19.695313 5.207031 19 6.15625 L 19 5 C 3.183594 5 3 27.769531 3 28 L 7 28 C 7 28 6.984375 23.125 8.53125 18.3125 C 9.304688 15.90625 10.480469 13.527344 12.15625 11.8125 C 13.832031 10.097656 15.972656 9 19 9 L 19.625 9 L 19.90625 8.4375 C 19.90625 8.4375 20.792969 6.953125 22 6.3125 L 22 9.25 L 26.09375 17.4375 L 26.1875 17.59375 L 26.3125 17.71875 C 26.714844 18.097656 26.867188 18.457031 26.9375 18.6875 C 26.992188 18.855469 26.96875 18.851563 26.96875 18.875 C 26.941406 18.972656 26.898438 19.183594 26.71875 19.46875 C 26.5 19.816406 26.304688 20 26 20 C 25.695313 20 25.5 19.816406 25.28125 19.46875 C 25.0625 19.121094 24.96875 18.75 24.96875 18.75 L 24.75 17.90625 L 23.875 18 C 23.875 18 23.042969 18.097656 22.125 17.84375 C 21.207031 17.589844 20.339844 17.140625 19.96875 15.75 L 19.625 14.46875 L 18.5 15.125 C 17.207031 15.882813 16.457031 17.039063 16.3125 18.21875 C 16.167969 19.398438 16.515625 20.535156 16.9375 21.65625 C 17.777344 23.898438 19 26.183594 19 28 L 21 28 C 21 25.378906 19.535156 22.945313 18.78125 20.9375 C 18.40625 19.933594 18.234375 19.085938 18.3125 18.46875 C 18.359375 18.09375 18.511719 17.773438 18.78125 17.46875 C 19.542969 18.660156 20.585938 19.503906 21.59375 19.78125 C 22.523438 20.039063 22.902344 19.957031 23.34375 19.9375 C 23.433594 20.171875 23.40625 20.230469 23.59375 20.53125 C 24 21.183594 24.804688 22 26 22 C 27.195313 22 28 21.183594 28.40625 20.53125 C 28.8125 19.878906 28.96875 19.25 28.96875 19.25 L 29 19.15625 L 29 19.0625 C 29 19.0625 29.007813 18.582031 28.84375 18.0625 C 28.707031 17.625 28.347656 17.09375 27.875 16.5625 L 27.90625 16.5625 L 24 8.75 L 24 4 Z M 18.46875 7.03125 C 18.464844 7.039063 18.441406 7.054688 18.4375 7.0625 C 18.03125 7.082031 17.636719 7.101563 17.25 7.15625 C 16.9375 7.199219 16.640625 7.277344 16.34375 7.34375 C 16.640625 7.265625 16.9375 7.207031 17.25 7.15625 C 17.640625 7.089844 18.050781 7.050781 18.46875 7.03125 Z M 22 12 C 21.449219 12 21 12.449219 21 13 C 21 13.550781 21.449219 14 22 14 C 22.550781 14 23 13.550781 23 13 C 23 12.449219 22.550781 12 22 12 Z" style="" id="object-0"></path>
+                </svg>
+                <svg class="horseHealthIcon2" id="horseHealthIcon2" fill="#ffffff" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="horseHealthIcon2Gradient" x1="0" x2="0" y1="0" y2="1">
+                            <stop offset="0%" stop-color="#ffffff"/>
+                            <stop offset="0%" stop-color="#ffffff"/>
+                        </linearGradient>
+                      </defs>
+                    <path fill="url(#horseHealthIcon2Gradient)" d="M 13.036 3.88 L 13.036 13.368 L 4.47 13.368 L 4.47 18.517 L 13.036 18.517 L 13.036 28.084 L 18.852 28.084 L 18.852 18.517 L 27.561 18.517 L 27.561 13.368 L 18.852 13.368 L 18.852 3.88 L 13.036 3.88 Z" style=""></path>
+                </svg>
+            </div>
+            <div class="notify-bar horseHealth-bar" id="horseHealth-bar">
+                <svg width="120%" height="120%" viewBox="-10 -10 120 120" xmlns="http://www.w3.org/2000/svg" transform="rotate(-90 50 50)">
+                    <circle class="progressCircle" cx="48" cy="53" r="48" fill="none" stroke="#ffffff" stroke-width="10"
+                    stroke-dasharray="301.59289474462014" stroke-dashoffset="301.59289474462014" shape-rendering="geometricPrecision"/>
+                  </svg>
+            </div>
+        </div>
+        <div class="horseStamina_container">
+            <div>
+                <svg class="horseStaminaIcon" id="horseStaminaIcon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="horseStaminaIconGradient" x1="0" x2="0" y1="0" y2="1">
+                            <stop offset="0%" stop-color="#ffffff"/>
+                            <stop offset="0%" stop-color="#ffffff"/>
+                        </linearGradient>
+                      </defs>
+                    <path fill="url(#horseStaminaIconGradient)" d="M 23 4 C 20.957031 4 19.695313 5.207031 19 6.15625 L 19 5 C 3.183594 5 3 27.769531 3 28 L 7 28 C 7 28 6.984375 23.125 8.53125 18.3125 C 9.304688 15.90625 10.480469 13.527344 12.15625 11.8125 C 13.832031 10.097656 15.972656 9 19 9 L 19.625 9 L 19.90625 8.4375 C 19.90625 8.4375 20.792969 6.953125 22 6.3125 L 22 9.25 L 26.09375 17.4375 L 26.1875 17.59375 L 26.3125 17.71875 C 26.714844 18.097656 26.867188 18.457031 26.9375 18.6875 C 26.992188 18.855469 26.96875 18.851563 26.96875 18.875 C 26.941406 18.972656 26.898438 19.183594 26.71875 19.46875 C 26.5 19.816406 26.304688 20 26 20 C 25.695313 20 25.5 19.816406 25.28125 19.46875 C 25.0625 19.121094 24.96875 18.75 24.96875 18.75 L 24.75 17.90625 L 23.875 18 C 23.875 18 23.042969 18.097656 22.125 17.84375 C 21.207031 17.589844 20.339844 17.140625 19.96875 15.75 L 19.625 14.46875 L 18.5 15.125 C 17.207031 15.882813 16.457031 17.039063 16.3125 18.21875 C 16.167969 19.398438 16.515625 20.535156 16.9375 21.65625 C 17.777344 23.898438 19 26.183594 19 28 L 21 28 C 21 25.378906 19.535156 22.945313 18.78125 20.9375 C 18.40625 19.933594 18.234375 19.085938 18.3125 18.46875 C 18.359375 18.09375 18.511719 17.773438 18.78125 17.46875 C 19.542969 18.660156 20.585938 19.503906 21.59375 19.78125 C 22.523438 20.039063 22.902344 19.957031 23.34375 19.9375 C 23.433594 20.171875 23.40625 20.230469 23.59375 20.53125 C 24 21.183594 24.804688 22 26 22 C 27.195313 22 28 21.183594 28.40625 20.53125 C 28.8125 19.878906 28.96875 19.25 28.96875 19.25 L 29 19.15625 L 29 19.0625 C 29 19.0625 29.007813 18.582031 28.84375 18.0625 C 28.707031 17.625 28.347656 17.09375 27.875 16.5625 L 27.90625 16.5625 L 24 8.75 L 24 4 Z M 18.46875 7.03125 C 18.464844 7.039063 18.441406 7.054688 18.4375 7.0625 C 18.03125 7.082031 17.636719 7.101563 17.25 7.15625 C 16.9375 7.199219 16.640625 7.277344 16.34375 7.34375 C 16.640625 7.265625 16.9375 7.207031 17.25 7.15625 C 17.640625 7.089844 18.050781 7.050781 18.46875 7.03125 Z M 22 12 C 21.449219 12 21 12.449219 21 13 C 21 13.550781 21.449219 14 22 14 C 22.550781 14 23 13.550781 23 13 C 23 12.449219 22.550781 12 22 12 Z"/>
+                </svg>
+                <svg class="horseStaminaIcon2" id="horseStaminaIcon2" viewBox="4.327 1.012 10.023 17.719"  mlns="http://www.w3.org/2000/svg" width="2.1551724137931036vh" height="35px">
+                    <defs>
+                        <linearGradient id="horseStaminaIcon2Gradient" x1="0" x2="0" y1="0" y2="1">
+                            <stop offset="0%" stop-color="#ffffff"/>
+                            <stop offset="0%" stop-color="#ffffff"/> 
+                        </linearGradient>
+                      </defs>
+                    <path fill="url(#horseStaminaIcon2Gradient)" d="M 11.374 1.012 L 4.327 10.93 L 9.327 10.93 L 6.625 18.731 L 14.35 8.064 L 9.35 8.064 L 11.374 1.012 Z"/>
+                </svg>
+            </div>
+            <div class="notify-bar horseStamina-bar" id="horseStamina-bar">
+                <svg width="120%" height="120%" viewBox="-10 -10 120 120" xmlns="http://www.w3.org/2000/svg" transform="rotate(-90 50 50)">
+                    <circle class="progressCircle" cx="48" cy="53" r="48" fill="none" stroke="#ffffff" stroke-width="10"
+                    stroke-dasharray="301.59289474462014" stroke-dashoffset="301.59289474462014" shape-rendering="geometricPrecision"/>
+                  </svg>
+            </div>
+        </div>      
+        <div class="hunger_container">
+            <div>
+                <svg class="hungerIcon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5 10C5 7.23858 7.23858 5 10 5H14C16.7614 5 19 7.23858 19 10V10.8382C17.9457 9.59948 16.026 9.60669 14.9818 10.8598C14.7311 11.1607 14.2689 11.1607 14.0182 10.8598C12.9679 9.59944 11.0321 9.59944 9.98178 10.8598C9.73105 11.1607 9.26895 11.1607 9.01822 10.8598C7.97395 9.60669 6.05435 9.59948 5 10.8382V10ZM21 10V10.5C21.2559 10.5 21.5118 10.5976 21.7071 10.7929C22.0976 11.1834 22.0976 11.8166 21.7071 12.2071L21.5246 12.3896C21.1544 12.7599 20.7056 12.999 20.234 13.1095C21.2565 13.4231 22 14.3747 22 15.5C22 16.3607 21.565 17.1199 20.9029 17.5696C20.9651 17.6999 21 17.8459 21 18V18.5C21 20.433 19.433 22 17.5 22H6.5C4.567 22 3 20.433 3 18.5V18C3 17.8459 3.03486 17.6999 3.09712 17.5696C2.43498 17.1199 2 16.3607 2 15.5C2 14.3747 2.74348 13.4231 3.76602 13.1095C3.29437 12.999 2.84564 12.7599 2.47537 12.3896L2.29289 12.2071C1.90237 11.8166 1.90237 11.1834 2.29289 10.7929C2.48816 10.5976 2.74408 10.5 3 10.5V10C3 6.13401 6.13401 3 10 3H14C17.866 3 21 6.13401 21 10ZM5.35966 13H8.83259C8.32453 12.8675 7.84903 12.5809 7.48178 12.1402C7.23105 11.8393 6.76895 11.8393 6.51822 12.1402L6.46105 12.2088C6.15489 12.5762 5.77366 12.8406 5.35966 13ZM10.1674 13H13.8326C13.3245 12.8675 12.849 12.5809 12.4818 12.1402C12.2311 11.8393 11.7689 11.8393 11.5182 12.1402C11.151 12.5809 10.6755 12.8675 10.1674 13ZM15.1674 13H18.6403C18.2263 12.8406 17.8451 12.5762 17.5389 12.2088L17.4818 12.1402C17.2311 11.8393 16.7689 11.8393 16.5182 12.1402C16.151 12.5809 15.6755 12.8675 15.1674 13ZM5 18V18.5C5 19.3284 5.67157 20 6.5 20H17.5C18.3284 20 19 19.3284 19 18.5V18H5ZM4 15.5C4 15.2239 4.22386 15 4.5 15H19.5C19.7761 15 20 15.2239 20 15.5C20 15.7761 19.7761 16 19.5 16H4.5C4.22386 16 4 15.7761 4 15.5Z" fill="#ffffff"/>
+                </svg>
+            </div>
+            <div>
+                <div class="notify-bar hunger-bar" id="hunger-bar">
+                    <svg width="120%" height="120%" viewBox="-10 -10 120 120" xmlns="http://www.w3.org/2000/svg" transform="rotate(-90 50 50)">
+                        
+                        <circle class="progressCircle" cx="48" cy="53" r="48" fill="none" stroke="#f3fb03" stroke-width="10"
+                        stroke-dasharray="301.59289474462014" stroke-dashoffset="301.59289474462014" shape-rendering="geometricPrecision"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="thirst_container">
+            <div>
+                <svg class = "thirstIcon" id="thirst" fill="#ffffff" version="1.2" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="-63 65 128 128" xml:space="preserve">
+                <path d="M8.4,108.4c7.7,1.8,13.5,8.4,13.5,16.3v60.6c0,1.9-1.6,3.4-3.5,3.4h-34.8c-1.9,0-3.5-1.5-3.5-3.4v-60.6
+                    c0-7.9,5.7-14.6,13.5-16.3V81.3H8.3v27.1H8.4z"/>
+                <rect x="-6.4" y="69.3" width="14.7" height="5.8"/>
+                </svg>
+            </div>
+            <div>
+                <div class="notify-bar thirst-bar" id="thirst-bar">
+                    <svg width="120%" height="120%" viewBox="-10 -10 120 120" xmlns="http://www.w3.org/2000/svg" transform="rotate(-90 50 50)">
+                        
+                        <circle class="progressCircle" cx="48" cy="53" r="48" fill="none" stroke="#0e03fb" stroke-width="10"
+                        stroke-dasharray="301.59289474462014" stroke-dashoffset="301.59289474462014" shape-rendering="geometricPrecision"/>
+                    </svg>
+                </div>
+            </div>
+        </div>  
+        <div class="voice_container">
+            <div>
+                <svg class="voiceIcon" id ="voiceIcon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" >
+                    <path d="M12 2a3 3 0 0 1 3 3v6a3 3 0 0 1-6 0V5a3 3 0 0 1 3-3zm7 9c0 3.53-2.61 6.44-6 6.93V21h-2v-3.07c-3.39-.49-6-3.4-6-6.93h2c0 2.76 2.24 5 5 5s5-2.24 5-5h2z" 
+                        fill="#ffffff" 
+                        stroke="none">
+                    </path>
+                    <line class="muteLine" id="muteLine" x1="1.712" y1="2.077" x2="21.951" y2="20.295" style="stroke: rgb(251, 3, 3); stroke-width: 4;"></line>
+                </svg>
+            </div>
+            <div>
+                <div class="notify-bar voice-bar" id="voice-bar">
+                    <svg width="120%" height="120%" viewBox="-10 -10 120 120" xmlns="http://www.w3.org/2000/svg" transform="rotate(-90 50 50)">
+                        
+                        <circle class="progressCircle" cx="48" cy="53" r="48" fill="none" stroke="#f3fb03" stroke-width="10"
+                        stroke-dasharray="301.59289474462014" stroke-dashoffset="301.59289474462014" shape-rendering="geometricPrecision"/>
+                    </svg>
+                </div>
+            </div>
+        </div> 
+        <div class="bath_container">
+            <div>
+                <svg class="bathIcon" id ="bathIcon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" >
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Dribbble-Light-Preview" transform="translate(-420.000000, -7959.000000)" fill="#ffffff">
+                        <g id="icons" transform="translate(56.000000, 160.000000)">
+                            <path d="M378.2146,7814.74613 C377.8906,7815.45754 377.1786,7815.91423 376.3926,7815.91423 L371.2496,7815.91423 C370.4696,7815.91423 369.7606,7815.46351 369.4336,7814.75807 L367.6626,7810.93934 L379.9486,7810.93934 L378.2146,7814.74613 Z M382.9996,7808.94938 L367.9996,7808.94938 L367.9996,7802.0502 C367.9996,7801.50098 368.4476,7801.05523 368.9996,7801.05523 C369.5526,7801.05523 369.9996,7801.50098 369.9996,7802.0502 L369.9996,7803.04518 C369.9996,7803.59541 370.4476,7804.04016 370.9996,7804.04016 C371.5526,7804.04016 371.9996,7803.59541 371.9996,7803.04518 L371.9996,7801.05523 C371.9996,7799.95677 371.1046,7798.9996 369.9996,7798.9996 L367.9996,7798.9996 C366.8956,7798.9996 365.9996,7799.95677 365.9996,7801.05523 L365.9996,7808.94938 L364.9996,7808.94938 C364.4476,7808.94938 363.9996,7809.39513 363.9996,7809.94436 C363.9996,7810.49459 364.4476,7810.93934 364.9996,7810.93934 L365.3686,7810.93934 L368.8496,7816.99976 L368.5426,7817.52311 C368.2816,7818.00667 368.4646,7818.58575 368.9516,7818.84544 C369.4376,7819.10413 370.0446,7819.00862 370.3046,7818.52406 L370.6846,7817.90419 L376.9896,7817.90419 L377.3696,7818.51212 C377.6306,7818.99568 378.2366,7819.12901 378.7236,7818.86932 C379.2096,7818.60963 379.3926,7817.98279 379.1326,7817.49824 L378.7936,7816.95498 L382.2436,7810.93934 L382.9996,7810.93934 C383.5526,7810.93934 383.9996,7810.49459 383.9996,7809.94436 C383.9996,7809.39513 383.5526,7808.94938 382.9996,7808.94938 L382.9996,7808.94938 Z" id="bathtub-[#49]">                          </path>
+                        </g>
+                    </g>
+                </g>
+            </div>
+            <div>
+                <div class="notify-bar dirt-bar" id="dirt-bar">
+                    <svg width="120%" height="120%" viewBox="-10 -10 120 120" xmlns="http://www.w3.org/2000/svg" transform="rotate(-90 50 50)">
+                        
+                        <circle class="progressCircle" cx="48" cy="53" r="48" fill="none" stroke="#f3fb03" stroke-width="10"
+                        stroke-dasharray="301.59289474462014" stroke-dashoffset="301.59289474462014" shape-rendering="geometricPrecision"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="temp_container">
+            <div>
+                <span class="tempnumber" id="tempnumber">TEMP</span>
+            </div>
+        </div>
+        <div class="crowd_container">
+            <svg class="crowdIcon" id ="crowdIcon" height="512px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path d="M256,111.9C256,111.9,256,111.9,256,111.9L256,111.9z"/>
+                <path d="M349.2,334.8c-11.2-3.9-29.5-5.1-37.5-8.2c-5.6-2.2-14.5-4.5-17.3-8c-2.9-3.4-2.9-28.1-2.9-28.1s7-6.5,9.9-13.8    c2.9-7.3,4.8-27.1,4.8-27.1s0.6,0.2,1.5,0.2c2.1,0,5.9-1.4,7.7-10.6c2.2-11.3,6.4-17.2,5.3-25.5c-0.8-5.6-3.2-6.5-4.6-6.5    c-0.7,0-1.2,0.2-1.2,0.2s5.7-8.4,5.7-37c0-29.4-22.7-58.4-64.6-58.5c-42,0.1-64.6,29.1-64.6,58.5c0,28.5,5.7,37,5.7,37    s-0.5-0.2-1.2-0.2c-1.5,0-3.9,0.9-4.6,6.5c-1.1,8.3,3,14.3,5.3,25.5c1.8,9.2,5.6,10.6,7.7,10.6c0.9,0,1.5-0.2,1.5-0.2    s1.9,19.9,4.8,27.1c2.9,7.3,9.9,13.8,9.9,13.8s0,24.7-2.9,28.1c-2.9,3.4-11.7,5.8-17.3,8c-8,3.1-26.3,4.3-37.5,8.2    c-11.2,3.9-45.8,20.2-45.8,65.2H395C395,355,360.5,338.7,349.2,334.8z"/></g><path d="M144.1,322c9-4.5,17.8-4.5,24.6-5.4c0,0,3.8-6.2-8.7-8.4c0,0-17.1-4.3-19.1-6.7c-2-2.4-0.8-15.7-0.8-15.7   s23.9-0.8,33.4-9.2c-15.5-23.2-7.2-50.3-10.4-75.6C160,175.8,144.9,160,116,160c-0.1,0,0,0-1,0v0c-28,0-42.4,15.8-45.6,41.1   c-3.2,25.3,6,55.4-9.9,75.7c8.9,7.9,30.9,8.3,33.4,8.3c0.2,0,0.2,0,0.2,0c0,0,0.1-0.1,0.1-0.1s1,14.2-1,16.6   c-2,2.4-7.9,4.6-11.9,5.5c-8.8,1.9-18.1,5-25.8,7.7C46.8,317.4,32,333,32,352h80.2C114.4,344,129.5,329.4,144.1,322z"/><path d="M399.8,352H480c0-19-14.8-34.6-22.5-37.3c-7.7-2.7-17.1-5.8-25.8-7.7c-4.1-0.9-9.9-3.1-11.9-5.5c-2-2.4-1-16.6-1-16.6   s0.1,0.1,0.1,0.1c0,0,0.1,0,0.2,0c2.5,0,24.6-0.3,33.5-8.3c-15.9-20.3-6.8-50.4-10-75.7C439.4,175.8,425,160,397,160v0   c-1,0-1,0-1,0c-28.9,0-44.1,15.8-47.2,41.1c-3.2,25.3,5.1,52.4-10.4,75.6c9.5,8.4,33.4,9.2,33.4,9.2s1.2,13.3-0.8,15.7   s-19.1,6.7-19.1,6.7c-12.5,2.2-8.7,8.4-8.7,8.4c6.8,0.9,15.7,0.9,24.6,5.4C382.5,329.4,397.6,344,399.8,352z"/>
+        </svg>
+        </div>
+        <div class="notify-container" id="notification-container">
+            <div id="notify" class="notification-bg" style="display:none">temp</div>
+        </div>
+    </div>
+</body>
+
+</html>

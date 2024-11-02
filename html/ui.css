@@ -1,0 +1,324 @@
+body {
+    background-color: transparent;
+}
+
+.container {
+    position: auto;
+    width: 100%;
+    height: 100%;
+}
+
+* {
+    user-select: none;
+}
+
+.progressCircle {
+    transition: stroke-dashoffset 0.3s ease;
+}
+
+.notify-bar {
+    background-color: transparent;
+    position: absolute;
+    top: -305%;
+    left: -27%;
+    width: 120%;
+    height: 120%;
+}
+
+.health_container {
+    position: absolute;
+    width: 2vh;
+    height: 2vh;
+    right: 95%;
+    top: 92.1%;
+    padding: 0.646551724137931vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.innerHealth {
+    position: absolute;
+    width: 5.387931034482759vh;
+    height: 5.387931034482759vh;
+    right: -2.33vh;
+    top: -2.5vh;
+    z-index: 20;
+}
+
+.stamina_container {
+    position: absolute;
+    width: 2vh;
+    height: 2vh;
+    right: 92%;
+    top: 92.1%;
+    padding: 0.646551724137931vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.innerStamina {
+    position: absolute;
+    width: 2.6939655172413794vh;
+    height: 2.6939655172413794vh;
+    right: 0.3vh;
+    top: 0.3232758620689655vh;
+    z-index: 20;
+}
+
+.horseHealth_container {
+    position: absolute;
+    width: 2vh;
+    height: 2vh;
+    right: 97%;
+    top: 82%;
+    padding: 0.6550218340611353vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.horseHealthIcon {
+    position: absolute;
+    width: 2vh;
+    height: 2vh;
+    right: 1vh;
+    top: 0vh;
+    z-index: 20;
+}
+
+.horseHealthIcon2 {
+    position: absolute;
+    width: 2vh;
+    height: 2vh;
+    left: 1.3vh;
+    top: 1vh;
+    z-index: 20;
+}
+
+.horseStamina_container {
+    position: absolute;
+    width: 2vh;
+    height: 2vh;
+    right: 96%;
+    top: 77%;
+    padding: 0.6550218340611353vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.horseStaminaIcon {
+    position: absolute;
+    width: 2vh;
+    height: 2vh;
+    right: 1vh;
+    top: 0vh;
+    z-index: 20;
+}
+
+.horseStaminaIcon2 {
+    position: absolute;
+    width: 2vh;
+    height: 2vh;
+    left: 1.3vh;
+    top: 1vh;
+    z-index: 20;
+}
+
+.hunger_container {
+    position: absolute;
+    width: 2vh;
+    height: 2vh;
+    right: 89%;
+    top: 92.1%;
+    padding: 0.646551724137931vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.hungerIcon {
+    position: absolute;
+    width: 2.6939655172413794vh;
+    height: 2.6939655172413794vh;
+    right: 0.45vh;
+    top: 0.2vh;
+    z-index: 20;
+}
+
+.thirst_container {
+    position: absolute;
+    width: 2vh;
+    height: 2vh;
+    right: 86%;
+    top: 92.1%;
+    padding: 0.646551724137931vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.hungerIcon {
+    position: absolute;
+    width: 2.6939655172413794vh;
+    height: 2.6939655172413794vh;
+    right: 0.3vh;
+    top: 0.21551724137931033vh;
+    z-index: 20;
+}
+
+
+.voice_container {
+    position: absolute;
+    width: 2vh;
+    height: 2vh;
+    right: 83%;
+    top: 92.1%;
+    padding: 0.6550218340611353vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.voiceIcon {
+    outline: none;
+    position: absolute;
+    width: 2.510917030567686vh;
+    height: 2.510917030567686vh;
+    right: 0.4vh;
+    top: 0.45vh;
+    z-index: 20;
+}
+
+.muteLine {
+    display: none;
+}
+
+.bath_container {
+    position: absolute;
+    width: 2vh;
+    height: 2vh;
+    right: 80%;
+    top: 92.1%;
+    padding: 0.6550218340611353vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.bathIcon {
+    position: absolute;
+    width: 2.6939655172413794vh;
+    height: 2.6939655172413794vh;
+    margin-top: -1.831896551724138vh;
+    top: 2.2vh;
+    left: 0.6vh;
+    z-index: 20;
+}
+
+.bathimg {
+    position: absolute;
+    width: 2.6939655172413794vh;
+    height: 2.6939655172413794vh;
+    right: 0.5458515283842795vh;
+    top: 0.3vh;
+    z-index: 20;
+}
+
+.temp_container {
+    position: absolute;
+    width: 2vh;
+    height: 2vh;
+    right: 77%;
+    top: 92.1%;
+    padding: 0.6550218340611353vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.tempnumber {
+    position: absolute;
+    left: 1.15054vh;
+    top: 1vh;
+    width: fit-content;
+    z-index: 20;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.293103448275862vh;
+}
+
+.crowd_container {
+    position: absolute;
+    width: 2vh;
+    height: 2vh;
+    right: 97.5%;
+    top: 92.1%;
+    padding: 0.6550218340611353vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.crowdIcon {
+    fill: green;
+    width: 2vh;
+    height: 2vh;
+    right: 77%;
+    top: 92.1%;
+}
+
+
+/* Notification */
+
+.notification-bg {
+    left: 35%;
+    color: #fff;
+    margin:0.646551724137931vh;
+    margin-top: 2%;
+    text-align: left;
+    padding: calc(0.092592592vh * 5) calc(0.092592592vh * 10);
+    position: absolute;
+    font-size:calc(0.092592592vh * 20);
+    background: radial-gradient(31.98% 56.85% at 50% 50%, rgba(12, 13, 18, 0.96) 0%, rgba(14, 15, 19, 0.96) 100%);
+    border-radius:  0.7543103448275862vh;
+    max-width: calc(0.092592592vh * 600);
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Anims */
+ 
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgb(175, 13, 13);
+    }
+
+    70% {
+        box-shadow: 0 0 0 14px rgba(237, 59, 59, 0.0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.0);
+    }
+}
+
+@keyframes pulseIcon {
+    0% {
+        transform: scale(0.85);
+    }
+
+    70% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0.85);
+    }
+}
